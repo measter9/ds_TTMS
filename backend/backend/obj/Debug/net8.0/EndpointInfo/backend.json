@@ -50,17 +50,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Contact"
+                "$ref": "#/components/schemas/CreateContactRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Contact"
+                "$ref": "#/components/schemas/CreateContactRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Contact"
+                "$ref": "#/components/schemas/CreateContactRequest"
               }
             }
           }
@@ -147,17 +147,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Contact"
+                "$ref": "#/components/schemas/CreateContactRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Contact"
+                "$ref": "#/components/schemas/CreateContactRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Contact"
+                "$ref": "#/components/schemas/CreateContactRequest"
               }
             }
           }
@@ -249,6 +249,20 @@
           },
           "number": {
             "maxLength": 9,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateContactRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "number": {
             "type": "string",
             "nullable": true
           }

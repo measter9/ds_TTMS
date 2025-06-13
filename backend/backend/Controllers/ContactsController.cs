@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using backend;
 using backend.Models;
+using backend.Models.DTOs;
 
 namespace backend.Controllers
 {
@@ -45,14 +46,23 @@ namespace backend.Controllers
         // PUT: api/Contacts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutContact(Guid id, Contact contact)
+        public async Task<IActionResult> PutContact(Guid id, CreateContactRequest request)
         {
-            if (id != contact.Id)
+            var editContact = await _context.Contact.FindAsync(id);
+            if (editContact == null)
+            {
+                return NotFound("could not find contact");
+            }
+            if (request.name.Length > 15 || request.number.Length > 9
+                //sprawdzenie czy jest numerem
+                )
             {
                 return BadRequest();
             }
-
-            _context.Entry(contact).State = EntityState.Modified;
+            if(request.name != null) 
+                editContact.name = request.name;
+            if (request.number != null)
+                editContact.number = request.number;
 
             try
             {
@@ -76,12 +86,20 @@ namespace backend.Controllers
         // POST: api/Contacts
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Contact>> PostContact(Contact contact)
+        public async Task<ActionResult<Contact>> PostContact(CreateContactRequest request)
         {
-            _context.Contact.Add(contact);
+
+            if (request.name.Length > 15 || request.number.Length > 9
+                //sprawdzenie czy jest numerem
+                )
+            {
+                return BadRequest();
+            }
+            var newContact = new Contact() { number = request.number, name = request.name };
+            _context.Contact.Add(newContact);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetContact", new { id = contact.Id }, contact);
+            return CreatedAtAction("GetContact", new { id = newContact.Id }, newContact);
         }
 
         // DELETE: api/Contacts/5

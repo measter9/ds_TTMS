@@ -28,8 +28,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "contact",
-        "Type": "backend.Models.Contact",
+        "Name": "request",
+        "Type": "backend.Models.DTOs.CreateContactRequest",
         "IsRequired": true
       }
     ],
@@ -85,8 +85,8 @@
         "IsRequired": true
       },
       {
-        "Name": "contact",
-        "Type": "backend.Models.Contact",
+        "Name": "request",
+        "Type": "backend.Models.DTOs.CreateContactRequest",
         "IsRequired": true
       }
     ],

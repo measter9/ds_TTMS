@@ -4,6 +4,7 @@ namespace backend.Models
 {
     public class Contact
     {
+        public Guid Id { get; set; }
         [Required]
         [MaxLength(15)]
         public string name { get; set; }

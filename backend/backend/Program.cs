@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<ContactsDbContext>(options => options.UseInMemoryDatabase("test"));
+builder.Services.AddDbContext<ContactsDbContext>(options => options.UseInMemoryDatabase("ContactApp"));
 
 var app = builder.Build();
 

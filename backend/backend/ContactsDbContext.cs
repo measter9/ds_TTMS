@@ -7,11 +7,12 @@ namespace backend
     {
         private DbContextOptions _options;
 
-        public ContactsDbContext(DbContextOptions options)
+        public ContactsDbContext(DbContextOptions options) : base(options)
         {
             _options = options;
         }
 
         DbSet<Contact> contacts;
+        public DbSet<backend.Models.Contact> Contact { get; set; } = default!;
     }
 }

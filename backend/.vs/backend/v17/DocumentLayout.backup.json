@@ -1,12 +1,75 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\job\\ds_TTMS\\backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F54C1416-767B-4319-8D9E-F512E0DFC8F9}|backend\\backend.csproj|c:\\users\\admin\\documents\\job\\ds_ttms\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54C1416-767B-4319-8D9E-F512E0DFC8F9}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F54C1416-767B-4319-8D9E-F512E0DFC8F9}|backend\\backend.csproj|c:\\users\\admin\\documents\\job\\ds_ttms\\backend\\backend\\contactsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54C1416-767B-4319-8D9E-F512E0DFC8F9}|backend\\backend.csproj|solutionrelative:backend\\contactsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F54C1416-767B-4319-8D9E-F512E0DFC8F9}|backend\\backend.csproj|c:\\users\\admin\\documents\\job\\ds_ttms\\backend\\backend\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54C1416-767B-4319-8D9E-F512E0DFC8F9}|backend\\backend.csproj|solutionrelative:backend\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\job\\ds_TTMS\\backend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\job\\ds_TTMS\\backend\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T07:14:56.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\job\\ds_TTMS\\backend\\backend\\ContactsDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\ContactsDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\job\\ds_TTMS\\backend\\backend\\ContactsDbContext.cs*",
+              "RelativeToolTip": "backend\\ContactsDbContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T07:13:39.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\job\\ds_TTMS\\backend\\backend\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\job\\ds_TTMS\\backend\\backend\\Models\\Contact.cs",
+              "RelativeToolTip": "backend\\Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T07:07:46.096Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
